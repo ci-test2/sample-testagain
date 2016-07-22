@@ -6,7 +6,7 @@ resources:
       
   - name: sampletest-image1
     type: image
-    integration: cock1-hub
+    integration: shiphitchcock1-docker
     pointer:
       sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
     seed:
@@ -14,7 +14,7 @@ resources:
       
   - name: sampletest-image2
     type: image
-    integration: cock1-hub
+    integration: shiphitchcock1-docker
     pointer:
       sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
     seed:
@@ -22,7 +22,7 @@ resources:
       
   - name: sampletest-image3
     type: image
-    integration: cock1-hub
+    integration: shiphitchcock1-docker
     pointer:
       sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
     seed:
@@ -30,11 +30,11 @@ resources:
       
   - name: sampletest-image4
     type: image
-    integration: cock1-hubtest
+    integration: shiphitchcock1-docker
     pointer:
       sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
     seed:
-      versionName: "deploy.4"
+      versionName: "deploy.5"
 
  # - name: sampletest-repo
   #  type: gitRepo
@@ -64,4 +64,4 @@ resources:
   - name: sampletest-timer2
     type: time
     seed:
-      interval: "30 17 20 7 3"
+      interval: "30 17 20 8 3"
