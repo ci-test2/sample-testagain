@@ -3,14 +3,15 @@ jobs:
     type: release
     steps:
       - IN: sampletest-version
-      - IN: sampletest-manifest
       - TASK: managed
         bump: minor
+      - IN: sampletest-manifest
+      
         
   - name: sampletest-manifest
     type: manifest
     steps:
-      - IN: sampletest-image4
+      - IN: sampletest-image1
       - TASK: managed
       - IN: triggertestsample1
       
@@ -18,6 +19,7 @@ jobs:
     type: ecsDeploy
     steps:
       - IN: sampletest-manifest
-      - IN: sampletest-cluster
       - TASK: managed
-        #deployMethod: upgrade
+        deployMethod: upgrade
+      - IN: sampletest-cluster
+      
