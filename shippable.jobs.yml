@@ -11,7 +11,7 @@ jobs:
   - name: sampletest-manifest
     type: manifest
     steps:
-      - IN: sampletest-image2
+      - IN: sampletest-image3
       - TASK: managed
       - IN: triggertestsample1
       
