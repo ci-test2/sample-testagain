@@ -3,8 +3,8 @@ jobs:
     type: release
     steps:
       - IN: testagain-version
-     # - TASK: managed
-      #  bump: patch
+      - TASK: managed
+        bump: patch
       - IN: sampleagain-manifest
       
         
