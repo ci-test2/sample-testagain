@@ -1,40 +1,16 @@
 resources:
-  - name: sampletest-version
+  - name: testagain-version
     type: version
     seed:
       versionName: "1.1.1-beta"
       
-  - name: sampletest-image1
+  - name: testagain-image1
     type: image
     integration: shiphitchcock1-docker
     pointer:
       sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
     seed:
       versionName: "deploy.4"
-      
-  - name: sampletest-image2
-    type: image
-    integration: shiphitchcock1-docker
-    pointer:
-      sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
-    seed:
-      versionName: "deploy.5"
-      
-  - name: sampletest-image3
-    type: image
-    integration: shiphitchcock1-docker
-    pointer:
-      sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
-    seed:
-      versionName: "deploy.4"
-      
-  - name: sampletest-image4
-    type: image
-    integration: shiphitchcock1-docker
-    pointer:
-      sourceName: "shiphitchcock1/betaci_nod_limitless_pl"
-    seed:
-      versionName: "deploy.5"
 
  # - name: sampletest-repo
   #  type: gitRepo
@@ -43,25 +19,25 @@ resources:
       #sourceName: shiphitchcock1/infra-repo
      # branch: testing
       
-  - name: sampletest-params1
+  - name: sampleagain-params1
     type: params
     version:
       params:
         MONGO_API_URL: "localhost:28017"
         
-  - name: sampletest-cluster
+  - name: sampleagain-cluster
     type: cluster
     integration: varshaarun-ecs
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
       
-  - name: sampletest-timer1
+  - name: sampleagain-timer1
     type: time
     seed:
-      interval: "* 20 23 7 *"
+      interval: "* 20 24 7 *"
       
-  - name: sampletest-timer2
+  - name: sampleagain-timer2
     type: time
     seed:
       interval: "30 17 20 8 3"
