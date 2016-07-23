@@ -3,3 +3,8 @@ triggers:
      type: trigger
      version:
        counter: 1
+       
+   - name: triggertestagain2
+     type: trigger
+     version:
+       counter: 1
