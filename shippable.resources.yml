@@ -33,7 +33,7 @@ resources:
       params:
         MONGO_API_URL: "localhost:28017"
         
-  - name: test-cluster
+  - name: test-ecscluster
     type: cluster
     integration: varshaarun-ecs
     pointer:
