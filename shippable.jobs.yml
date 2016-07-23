@@ -15,12 +15,17 @@ jobs:
       #- TASK: managed
       - IN: triggertestagain1
       
-  #- name: sampleagain-ecsdeploy
-   # type: ecsDeploy
-    #steps:
-     # - IN: sampleagain-manifest
-      #- IN: sampleagain-cluster
+  - name: sampleagain-manredis
+    type: manifest
+    steps:
+      - IN: test-imageredis
       #- TASK: managed
-      #  deployMethod: upgrade
+      - IN: triggertestagain1
       
-      
+  - name: sampleagain-ecsdeploy
+    type: ecsDeploy
+    steps:
+      - IN: sampleagain-manredis
+      - IN: sampleagain-cluster
+      - TASK: managed
+        deployMethod: upgrade
