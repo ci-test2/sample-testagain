@@ -1,25 +1,26 @@
 jobs:
-  - name: sampletest-release
+  - name: sampleagain-release
     type: release
     steps:
-      - IN: sampletest-version
-      - TASK: managed
-        bump: minor
-      - IN: sampletest-manifest
+      - IN: testagain-version
+     # - TASK: managed
+      #  bump: patch
+      - IN: sampleagain-manifest
       
         
-  - name: sampletest-manifest
+  - name: sampleagain-manifest
     type: manifest
     steps:
-      - IN: sampletest-image3
-      - TASK: managed
-      - IN: triggertestsample1
+      - IN: testagain-image1
+      #- TASK: managed
+      - IN: triggertestagain1
       
-  - name: sampletest-ecsdeploy
-    type: ecsDeploy
-    steps:
-      - IN: sampletest-manifest
-      - TASK: managed
-        deployMethod: upgrade
-      - IN: sampletest-cluster
+  #- name: sampleagain-ecsdeploy
+   # type: ecsDeploy
+    #steps:
+     # - IN: sampleagain-manifest
+      #- IN: sampleagain-cluster
+      #- TASK: managed
+      #  deployMethod: upgrade
+      
       
