@@ -21,10 +21,10 @@ jobs:
       #- TASK: managed
       - IN: triggertestagain1
       
-  - name: test-manredis
+  - name: test-ecsDeploy
     type: ecsDeploy
     steps:
-      - IN: sampleagain-manredis
+      - IN: test-manredis
       - IN: test-ecscluster
       - TASK: managed
         deployMethod: upgrade
