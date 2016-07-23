@@ -1,10 +1,10 @@
 resources:
-  - name: testagain-version
+  - name: test-version
     type: version
     seed:
       versionName: "1.2.3"
       
-  - name: testagain-image1
+  - name: test-imagerunc1
     type: image
     integration: shiphitchcock1-docker
     pointer:
@@ -27,25 +27,25 @@ resources:
       #sourceName: shiphitchcock1/infra-repo
      # branch: testing
       
-  - name: sampleagain-params1
+  - name: test-params1
     type: params
     version:
       params:
         MONGO_API_URL: "localhost:28017"
         
-  - name: sampleagain-cluster
+  - name: test-cluster
     type: cluster
     integration: varshaarun-ecs
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
       
-  - name: sampleagain-timer1
+  - name: test-timer1
     type: time
     seed:
       interval: "* 20 24 7 *"
       
-  - name: sampleagain-timer2
+  - name: test-timer2
     type: time
     seed:
       interval: "30 17 20 8 3"
