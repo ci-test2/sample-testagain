@@ -24,7 +24,7 @@ resources:
     type: dockerOptions
     version:
       links:
-        - "test-imageredis:redis"
+        - "ecs-test-ecsDeploy-test-manredis-8449a79c-8bac-46ab-a3c7-4c325322e8b2-1-test-imageredis-9cbcbeeb87fdf9ceec01:redis"
       
   - name: test-params1
     type: params
