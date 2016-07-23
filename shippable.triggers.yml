@@ -7,4 +7,4 @@ triggers:
    - name: triggertestagain2
      type: trigger
      version:
-       counter: 2
+       counter: 3
