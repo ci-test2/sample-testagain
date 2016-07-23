@@ -1,21 +1,20 @@
 jobs:
-  - name: sampleagain-release
+  - name: test-release
     type: release
     steps:
-      - IN: testagain-version
+      - IN: test-version
       - TASK: managed
         bump: patch
-      - IN: sampleagain-manifest
-      
+      - IN: test-man1
         
-  - name: sampleagain-manifest
+  - name: test-man1
     type: manifest
     steps:
-      - IN: testagain-image1
+      - IN: test-imagerunc1
       #- TASK: managed
       - IN: triggertestagain1
       
-  - name: sampleagain-manredis
+  - name: test-manredis
     type: manifest
     steps:
       - IN: test-imageredis
@@ -26,6 +25,6 @@ jobs:
     type: ecsDeploy
     steps:
       - IN: sampleagain-manredis
-      - IN: sampleagain-cluster
+      - IN: test-ecscluster
       - TASK: managed
         deployMethod: upgrade
