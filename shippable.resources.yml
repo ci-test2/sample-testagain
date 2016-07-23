@@ -2,7 +2,7 @@ resources:
   - name: testagain-version
     type: version
     seed:
-      versionName: "1.1.1-beta"
+      versionName: "1.2.3"
       
   - name: testagain-image1
     type: image
