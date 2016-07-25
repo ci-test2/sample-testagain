@@ -51,7 +51,7 @@ resources:
       
   - name: testecs-dopts1
     type: dockerOptions
-    version:
+version:
       memory: 64
       cpuShares: 2
       
