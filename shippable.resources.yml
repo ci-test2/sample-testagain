@@ -53,7 +53,7 @@ resources:
     type: dockerOptions
     version:
       memory: 64
-  cpuShares: 2
+      cpuShares: 2
       
    # - name: sampletest-repo
   #  type: gitRepo
