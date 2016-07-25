@@ -49,6 +49,12 @@ resources:
     seed:
       interval: "30 17 20 8 3"
       
+  - name: testecs-dopts1
+    type: dockerOptions
+    version:
+      memory: 64
+      cpuShares: 2
+      
    # - name: sampletest-repo
   #  type: gitRepo
    # integration: shiphitchcock1-github
