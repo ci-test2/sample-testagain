@@ -11,7 +11,6 @@ jobs:
     type: manifest
     steps:
       - IN: test-imagerunc1
-      - IN: testecs-doptslinks
       #- TASK: managed
       - IN: triggertestagain2
       
@@ -30,10 +29,8 @@ jobs:
       - TASK: managed
         deployMethod: upgrade
         
-  - name: testlinks-ecsDeploy2
+  - name: testpreviousop-ecsDeploy
     type: ecsDeploy
     steps:
       - IN: test-man1
       - IN: test-ecscluster
-      - TASK: managed
-        deployMethod: upgrade
