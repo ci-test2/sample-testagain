@@ -11,6 +11,7 @@ jobs:
     type: manifest
     steps:
       - IN: test-imagerunc1
+      - IN: testecs-dopts1
       #- TASK: managed
       - IN: triggertestagain2
       
