@@ -50,7 +50,7 @@ resources:
       interval: "30 17 20 8 3"
       
   - name: testecs-dopts1
-type: dockerOptions
+    type: dockerOptions
     version:
       memory: 64
       cpuShares: 2
